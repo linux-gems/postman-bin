@@ -1,10 +1,10 @@
 # Maintainer: Rafael Dominiquini <rafaeldominiquini at gmail dot com>
 # Contributor: Jay Ta'ala <jay@jaytaala.com>
 # Contributor: Claudio d'Angelis <claudiodangelis at gmail dot com>
-# Contributor: Juan Francisco Miranda <jfmiranda at gmail dot com>
+# Contributor: Juan Francisco Miranda <aurarchlinux.sleek355 at passfwd dot com>
 
 pkgname=postman-bin
-pkgver=12.22.8
+pkgver=12.24.5
 pkgrel=1
 pkgdesc="Build, test, and document your APIs faster"
 provides=('postman')
@@ -20,8 +20,8 @@ source_x86_64=("postman-${pkgver}-linux-${arch[0]}.tar.gz::https://dl.pstmn.io/d
 source_aarch64=("postman-${pkgver}-linux-${arch[1]}.tar.gz::https://dl.pstmn.io/download/version/${pkgver}/linux_arm64")
 
 sha256sums=('d87542ac18455ff341da7c5efd01db96a01f659b1bf546840aa4ac8bd085802d')
-sha256sums_x86_64=('503beef8158772edea807517f88220b4ed2e2891dfab5a4ab0181d906bf79e0e')
-sha256sums_aarch64=('45701bda630b843174c1a32d3364610cbb7cc979a88ca894bb305c8011454457')
+sha256sums_x86_64=('e45ab7476a4147443fd1788722ecaac269d34db7c660cfc4315503a530656382')
+sha256sums_aarch64=('51a3e437bf7599a26e89ba96d17772bf8142d701f1a9d4c20b203340d185f886')
 
 package() {
   install -dm755 "${pkgdir}/opt/"
